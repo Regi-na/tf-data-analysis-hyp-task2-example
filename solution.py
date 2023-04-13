@@ -8,5 +8,5 @@ def solution(x: np.array, y: np.array) -> bool:
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    return MMD(compute_kernel="laplacian", gamma=1).test(x, y)[1] < 0.06
+    return MMD(compute_kernel="laplacian", gamma=0.55).test(x, y)[1] < 0.06
 
